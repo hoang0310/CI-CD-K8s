@@ -1,6 +1,9 @@
 node{
+  //default namespace on k8s
   def Namespace = "default"
+  // image name which will be pushed to docker registry
   def ImageName = "sayarapp/sayarapp"
+  // Creds of docker registry
   def Creds	= "2dfd9d0d-a300-49ee-aaaf-0a3efcaa5279"
   try{
   stage('Checkout'){
